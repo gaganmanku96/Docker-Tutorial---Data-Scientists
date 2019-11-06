@@ -52,6 +52,23 @@ The file that you want to run
 
 #### To build docker image, type
 ```
-docker build -t simpleflask .
+$ docker build -t simpleflask .
 ```
 ##### Make sure your Dockerfile is in the same directory.
+
+#### To run the docker image, type
+```
+$ docker images
+
+# copy the image id
+
+$ docker run -d -p 5000:5000 <image_id>
+```
+
+#### Calling API
+TO check if your docker container is running or not. Type
+```
+$ docker ps -a
+```
+You'll see a docker container there.
+You can also see it by opening localhost:5000 in web browser

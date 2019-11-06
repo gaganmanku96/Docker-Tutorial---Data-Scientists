@@ -12,9 +12,11 @@ with open('model.pkl', 'rb') as f:
 @app.route('/predict', methods=['POST'])
 def predict():
     parameters = request.get_json(force=True)
-    features = str(parameters).split('-')
-    f1, f2, f3 = int(features[0]), int(features[1]), int(features[2])
+    f1 = int(parameters['f1'])
+    f2 = int(parameters['f2'])
+    f3 = int(parameters['f3'])
     spending_score = model.predict(([f1, f2, f3],))[0]
+    print(spending_score)
     return jsonify(spending_score)
 
 
