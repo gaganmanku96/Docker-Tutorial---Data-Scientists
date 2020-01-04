@@ -1,0 +1,7 @@
+version: '3'
+services: 
+    simple_ml_app:
+        build: .
+        ports: 
+            - "5000:5000"
+        container_name: simple_ml_app

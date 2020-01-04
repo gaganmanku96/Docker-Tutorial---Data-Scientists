@@ -16,7 +16,6 @@ def predict():
     f2 = int(parameters['f2'])
     f3 = int(parameters['f3'])
     spending_score = model.predict(([f1, f2, f3],))[0]
-    print(spending_score)
     return jsonify(spending_score)
 
 

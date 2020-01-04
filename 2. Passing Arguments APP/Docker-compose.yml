@@ -1,0 +1,7 @@
+version: '3'
+services: 
+    passing_args: 
+        build: .
+        ports: 
+            - "5000:5000"
+        container_name: passing_args

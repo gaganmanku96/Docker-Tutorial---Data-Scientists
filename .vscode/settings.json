@@ -1,6 +1,6 @@
 {
-    "python.pythonPath": "/home/gagan/miniconda3/envs/nlp/bin/python",
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
+    "python.pythonPath": "C:\\Miniconda3\\envs\\root_env\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
     "python.linting.enabled": true
 }
