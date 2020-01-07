@@ -42,7 +42,7 @@ Example CMD ["python", "app.py"]
 ### Example Dockerfile
 ```
 FROM ubuntu:latest
-RUN apt update &\
+RUN apt update &&\
   apt install python3-pip
 COPY . /app
 WORKDIR /app
